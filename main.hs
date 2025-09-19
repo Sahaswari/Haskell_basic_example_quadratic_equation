@@ -17,7 +17,7 @@ main = do
             root2 = (-b - sqrt discriminant) / (2*a)
         in putStrLn $ "Roots are real and different: " ++ show root1 ++ " and " ++ show root2
     else if discriminant == 0 then
-        let root = -b / (2*a)
+        let root = - (b / (2 * a))
         in putStrLn $ "Roots are real and the same: " ++ show root
     else
         putStrLn "Roots are complex and different."
